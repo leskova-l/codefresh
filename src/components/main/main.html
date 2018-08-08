@@ -1,0 +1,8 @@
+<div class="container">
+  <button class="btn" ng-click="app.onBuild()">Build</button>
+  <terminal ng-repeat="(i, terminal) in app.terminals"
+            data="terminal"
+            id="terminal{{i+1}}"
+  >
+  </terminal>
+</div>

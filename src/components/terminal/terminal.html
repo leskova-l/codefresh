@@ -1,0 +1,8 @@
+<div class="terminal-wrap">
+  <div class="terminal-info">
+    {{app.terminal.name}}
+  </div>
+  <div class="terminal-logs" ngIf="app.terminal.log.length > 0" scroll-glue>
+    <div ng-repeat="log in app.terminal.logs track by $index" >{{log}}</div>
+  </div>
+</div>
