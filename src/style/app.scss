@@ -19,3 +19,7 @@ body {
   padding: 10px 30px;
   text-transform: capitalize;
 }
+.disabled{
+  opacity: 0.6;
+  pointer-events: none;
+}

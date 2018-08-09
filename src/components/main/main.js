@@ -5,16 +5,17 @@ export default class MainCtrl {
     this.currentStep = {
       name: '',
       logs: [],
-      timer: 0,
     };
     this.location = $location;
     this.scrollTo = $anchorScroll;
+    this.disabled = false;
 
     this.listenSoket();
   }
 
   onBuild() {
     this.socket.emit('build', { msg: 'build' });
+    this.disabled = !this.disabled;
   }
 
   listenSoket() {
